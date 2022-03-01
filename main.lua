@@ -84,3 +84,9 @@ abc()
 require("abc.mod2")
 require("abc.mod2")
 
+local uri = "/abc/test"
+local idx = string.find(uri, "?")
+if idx ~= nil then
+    local result = string.sub(uri, idx+1)
+    print(result, idx)
+end
