@@ -90,3 +90,6 @@ if idx ~= nil then
     local result = string.sub(uri, idx+1)
     print(result, idx)
 end
+
+local ts = 1646732921896
+print(tostring(ts), string.sub(tostring(ts), string.len(ts)-2))
